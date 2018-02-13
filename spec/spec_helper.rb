@@ -8,7 +8,6 @@ require 'rspec'
 
 Capybara.app = BookmarkManager
 
-
 RSpec.configure do |config|
 
   config.before(:each) do

@@ -1,7 +1,6 @@
 require 'databaseconnection'
 
 describe DatabaseConnection do
-
   subject(:dbconnection) { described_class.setup("bookmark_manager_test") }
   subject(:query) { described_class.query("SELECT * FROM links") }
 

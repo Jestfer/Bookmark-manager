@@ -2,7 +2,6 @@ require 'link'
 require 'pg'
 
 describe Link do
-
   subject(:link) { described_class.all }
   subject(:new_link) { described_class.create("www.bbc.co.uk") }
 
