@@ -11,8 +11,8 @@ describe DatabaseConnection do
   end
 
   describe ".query" do
-    xit "takes a query as argument" do
-      expect(query).to take(1).arg
+    it "takes a query as argument" do
+      expect(described_class).to respond_to(:query).with(1).argument
     end
 
     it "executes the query" do
